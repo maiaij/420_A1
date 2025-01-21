@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- CHANGE TEXT TO MATCH -->
+<body>
+    
+    <section class="container-fluid">
+        <section class="row">
+            <!-- Make Navbar Fixed -->
+            <!-- Nav Sidebar -->
+            <nav class="col-md-2 sidebar d-none d-md-block bg-dark text-white">
+                
+                <ul class="nav flex-column stay">
+                    <h4 class="text-center py-3">Dashboard Kit</h4>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-pie-chart-fill"></h4>
+                        <a class="nav-link active text-white" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-ticket-perforated-fill"></h4>
+                        <a class="nav-link text-white" href="#">Tickets</a>
+                    </li>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-lightbulb-fill"></h4>
+                        <a class="nav-link text-white" href="#">Ideas</a>
+                    </li>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-person-lines-fill"></h4>
+                        <a class="nav-link text-white" href="#">Contacts</a>
+                    </li>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-joystick"></h4>
+                        <a class="nav-link text-white" href="#">Agents</a>
+                    </li>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-journal-bookmark-fill"></h4>
+                        <a class="nav-link text-white" href="#">Articles</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-gear-fill"></h4>
+                        <a class="nav-link text-white" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item align-items-center d-flex icons">
+                        <h4 class="bi bi-award-fill"></h4>
+                        <a class="nav-link text-white" href="#">Subscription</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-10 p-4">
+                <!-- Header -->
+                <section class="d-flex justify-content-between align-items-center py-5 px-3">
+                    <!-- divs removed -->
+                    <h2>Overview</h2>
+                    <section class="d-flex">
+                        <h3 class="bi bi-search icons"></h3>
+                        <h3 class="bi bi-bell icons"></h3>
+                        <div id="top-divider" class="vr" alt="verical divider"></div>
+                        <h3 class="bi bi-person-circle"></h3>
+                    </section>
+                </section>
+
+                <!-- Overview Cards -->
+                <section class="row mb-4 d-flex justify-content-between align-items-center">
+                    <section class="col-sm-6 col-lg-3">
+                        <section class="card text-center border-1 p-4">
+                            <p class="gray-bolder">Unresolved</p>
+                            <h3 class="fw-bold">60</h3>
+                        </section>
+                    </section>
+                    <section class="col-sm-6 col-lg-3">
+                        <section class="card text-center border-1 p-4">
+                            <p class="gray-bolder">Overdue</p>
+                            <h3 class="fw-bold text-primary">16</h3>
+                        </section>
+                    </section>
+                    <section class="col-sm-6 col-lg-3">
+                        <section class="card text-center border-1 p-4">
+                            <p class="gray-bolder">Open</p>
+                            <h3 class="fw-bold">43</h3>
+                        </section>
+                    </section>
+                    <section class="col-sm-6 col-lg-3">
+                        <section class="card text-center border-1 p-4">
+                            <p class="gray-bolder">On hold</p>
+                            <h3 class="fw-bold">64</h3>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Today's Trends and Stats -->
+                <section class="card">
+                    <section class="row px-2">
+                        <!-- Section Header -->
+                        <section class="col-sm-9 col-lg-9 p-5">
+                            <h5 class="mb-3">Today's trends</h5>
+                            <p class="text-muted m-0">as of 25 May 2019, 09:41 PM</p>
+                            <img class="img-fluid" src="../assets/images/full-graph.svg"></img>
+                        </section>
+                        
+                        <div class="vr align-items-stretch" ></div>
+
+                        <section class="col d-flex flex-column justify-content-center align-items-center p-0">
+                            <p class="gray-bold m-0">Resolved</p>
+                            <p class="fw-bold">449</p>
+                            <hr class="dark-divider">
+
+                            <p class="gray-bold m-0">Received</p>
+                            <p class="fw-bold">426</p>
+                            <hr class="dark-divider">
+
+                            <p class="gray-bold m-0">Average first response time</p>
+                            <p class="fw-bold">33m</p>
+                            <hr class="dark-divider">
+
+                            <p class="gray-bold m-0">Average response time</p>
+                            <p class="fw-bold">3h 8m</p>
+                            <hr class="dark-divider">
+                            
+                            <p class="gray-bold m-0">Resolution within SLA</p>
+                            <p class="fw-bold">94%</p>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Additional Content Blocks -->
+                <section class="row pt-4">
+                    <section class="col-sm-12 col-lg-6">
+                        <section class="card p-5">
+                            <!-- title -->
+                             <div class="d-flex flex-row justify-content-between">
+                                <h5>Unresolved tickets</h5>
+                                <a href="#" class="text-decoration-none">View details</a>
+                             </div>
+                            <p>Group: <strong aria-label="bold">Support</strong></p>
+
+                            <ul class="list-unstyled">
+                                <li class="d-flex justify-content-between py-2">
+                                    <p class="mt-4 m-0">Waiting on Feature Request</p>
+                                    <p class="mt-4 m-0">4238</p>
+                                </li>
+                                <hr class="dark-divider">
+
+                                <li class="d-flex justify-content-between py-2">
+                                    <p class="m-0">Awaiting Customer Response</p>
+                                    <p class="m-0">1005</p>
+                                </li>
+                                <hr class="dark-divider">
+
+                                <li class="d-flex justify-content-between py-2">
+                                    <p class="m-0">Awaiting Developer Fix</p>
+                                    <p class="m-0">914</p>
+                                </li>
+                                <hr class="dark-divider">
+
+                                <li class="d-flex justify-content-between py-2">
+                                    <p class="m-0">Pending</p>
+                                    <p class="m-0">281</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+
+                    <section class="col-sm-12 col-lg-6">
+                        <section class="card p-5">
+                            <!-- title -->
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5>Tasks</h5>
+                                <a href="#" class="text-decoration-none">View all</a>
+                             </div>
+                            <p>Today</p>
+
+                            <!-- MAKE CHECKBOX ROUND -->
+                            <ul class="list-unstyled">
+                                <li class="d-flex justify-content-between align-items-center py-1">
+                                    <div>
+                                        <input type="text" value="Create new task" class="border-0">
+                                    </div>
+                                    <button class="grey-badge p-2"> + </button>
+                                </li>
+                                <hr class="dark-divider">
+
+                                <li class="d-flex justify-content-between align-items-center py-1">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input me-2">
+                                        <label>Finish ticket update</label>
+                                    </div>
+                                    <button id="urgent-badge" class="p-2">Urgent</button>
+                                </li>
+                                <hr class="dark-divider">
+
+                                <li class="d-flex justify-content-between align-items-center py-1">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input me-2">
+                                        <label>Create new ticket example</label>
+                                    </div>
+                                    <button id="new-badge" class="p-2">New</button>
+                                </li>
+                                <hr class="dark-divider">
+                                
+                                <li class="d-flex justify-content-between align-items-center py-1">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input me-2" checked>
+                                        <label>Update ticket report</label>
+                                    </div>
+                                    <button class="grey-badge p-2">Default</button>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                    
+                </section>
+
+            </main>
+
+        </section>
+    </section>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
