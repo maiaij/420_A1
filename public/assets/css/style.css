@@ -2,15 +2,50 @@
     color: red;
 }
 
+.navbar-brand {
+    font-size: 24px;
+}
+
+.hero-header {
+    margin: 70px;
+}
+
+.hero-header > h1 {
+    font-size: 50px;
+}
+
+.hero-header > h2 {
+    font-size: 30px;
+}
+
 .lavender {
     color: #6c5ce7;
 }
 
 /* remove later */
-.hamburger {
-    /* display: none; */
+.hamburger ul{
+    display: none;
 }
 
 @media (min-width: 650px){
     /* for desktop */
+    .navbar-brand {
+        font-size: 50px;
+    }
+
+    .hero-header {
+        margin: 100px;
+    }
+    
+    .hero-header > h1 {
+        font-size: 75px;
+    }
+    
+    .hero-header > h2 {
+        font-size: 50px;
+    }
+
+    .hamburger ul{
+        display: flex; /* flex or content hm*/
+    }
 }

@@ -9,25 +9,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="col">
 
+<body class="container-fluid">
     <!-- nav bar -->
-    <section class="hamburger">
-        <nav class="row">
-            <ul>
-                <li> Grid </li>
-                <li> How it works </li>
-                <li> Who we are </li>
-                <li> What we do </li>
-                <li> Contact us </li>
-                <li> Sign in </li>
-            </ul>
-        </nav>
+    <!-- add sm breakpoint to nav bar for the hamburger menu -->
+    <section class="row hamburger">
+        <nav class="navbar navbar-expand-sm navbar-expand-lg navbar-light bg-light p-3 px-5">
+            <a class="navbar-brand" href="#">Grid</a>
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="#">How it works</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Who we are</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">What we do </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a> </li>
+                </ul>
 
-        <!-- header -->
-        <section>
-            <h1>Combine <span class="red">cool</span> images <br> To create any grid by scaling and resizing</h1>
-        </section>
+                <button type="button" class="btn btn-primary rounded-pill px-5">Sign In</button>
+
+            </div>
+        </nav>
+    </section>
+
+    <!-- header -->
+    <section class="hero-header">
+        <h1 class="text-center">Combine <span class="red">cool</span> <br>images</h1>
+        <h2 class="text-center">To create any grid by scaling and resizing</h2>
     </section>
 
     <!-- gallery grid -->
@@ -37,59 +43,63 @@
 
     <!-- https://getbootstrap.com/docs/4.1/layout/overview/ -->
 
-    <section class="col">
+    <section class="col px-5">
         <h2>Delivering good designs <span class="lavender"> since 1954 </span></h2>
 
         <p>
             We're the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your layouts, templates and developers to empower all involved.
         </p>
 
-        <section class="card">
-            <!-- icon -->
-            
-            <!-- paragraph -->
-            <p> Swap the icon </p>
-            <!--  -->
-            
-            <!-- button -->
-            <button>Learn more</button>
-            
-        </section>
+        <section class="container">
+            <section class="row row-cols-sm-2">
+                <section class="col-lg col-sm">
+                    <!-- icon -->
+                    
+                    <!-- paragraph -->
+                    <p> Swap the icon </p>
+                    <!--  -->
+                    
+                    <!-- button -->
+                    <button>Learn more</button>
+                    
+                </section>
 
-        <section class="card">
-            <!-- icon -->
-            
-            <!-- paragraph -->
-            <p> Detach if need <br>You can toggle to any icon within instances and customize outlined stroke bolder or lighter</p>
-            <!--  -->
-            
-            <!-- button -->
-            <button>Learn more</button>
-            
-        </section>
+                <section class="col-lg col-sm">
+                    <!-- icon -->
+                    
+                    <!-- paragraph -->
+                    <p> Detach if need <br>You can toggle to any icon within instances and customize outlined stroke bolder or lighter</p>
+                    <!--  -->
+                    
+                    <!-- button -->
+                    <button>Learn more</button>
+                    
+                </section>
 
-        <section class="card">
-            <!-- icon -->
-            
-            <!-- paragraph -->
-            <p> Toggle icons <br>Detaching the block instance will help you to control the indents and font styles more precisely</p>
-            <!--  -->
-            
-            <!-- button -->
-            <button>Learn more</button>
-            
-        </section>
+                <section class="col-lg col-sm">
+                    <!-- icon -->
+                    
+                    <!-- paragraph -->
+                    <p> Toggle icons <br>Detaching the block instance will help you to control the indents and font styles more precisely</p>
+                    <!--  -->
+                    
+                    <!-- button -->
+                    <button>Learn more</button>
+                    
+                </section>
 
-        <section class="card">
-            <!-- icon -->
-            
-            <!-- paragraph -->
-            <p> Replace a title </p>
-            <!--  -->
-            
-            <!-- button -->
-            <button>Learn more</button>
-            
+                <section class="col-lg col-sm">
+                    <!-- icon -->
+                    
+                    <!-- paragraph -->
+                    <p> Replace a title </p>
+                    <!--  -->
+                    
+                    <!-- button -->
+                    <button>Learn more</button>
+                    
+                </section>
+            </section>
         </section>
 
     </section>
