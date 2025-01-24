@@ -1,11 +1,22 @@
+/* highlighted text colours */
 .red {
     color: red;
 }
 
+.lavender {
+    color: #6c5ce7;
+}
+
+.info {
+    padding: 10px;
+}
+
+/* nav bar */
 .navbar-brand {
     font-size: 24px;
 }
 
+/* big text adjustments */
 .hero-header {
     margin: 70px;
 }
@@ -18,21 +29,53 @@
     font-size: 30px;
 }
 
-.lavender {
-    color: #6c5ce7;
+.icons {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
 }
 
-/* remove later */
-.hamburger ul{
+#thumbs-up {
+    background-image: url("../images/icon-thumbs-up.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF7675;
+}
+
+#zap-off {
+    background-image: url("../images/icon-zap-off.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00B894;
+}
+
+#linkedin {
+    background-image: url("../images/icon-linkedin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #E84393;
+}
+
+#briefcase {
+    background-image: url("../images/icon-briefcase.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #74B9FF;
+}
+
+/* hide desktop nav items */
+/*.hamburger ul{
     display: none;
-}
+}*/
 
+/* for desktop */
 @media (min-width: 650px){
-    /* for desktop */
+    /* nav bar */
     .navbar-brand {
         font-size: 50px;
     }
 
+    /* big text adjustments */
     .hero-header {
         margin: 100px;
     }
@@ -45,7 +88,8 @@
         font-size: 50px;
     }
 
-    .hamburger ul{
-        display: flex; /* flex or content hm*/
-    }
+    /* remove hamburger */
+    /*.hamburger ul{
+        display: flex; /* flex or content 
+    } */
 }

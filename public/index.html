@@ -15,14 +15,27 @@
     <!-- add sm breakpoint to nav bar for the hamburger menu -->
     <section class="row hamburger">
         <nav class="navbar navbar-expand-sm navbar-expand-lg navbar-light bg-light p-3 px-5">
-            <a class="navbar-brand" href="#">Grid</a>
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active"> <a class="nav-link" href="#">How it works</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Who we are</a> </li>
-                    <li class="nav-item"><a class="nav-link" href="#">What we do </a> </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a> </li>
-                </ul>
+            <div class="container">
+                <!-- hamburger and grid grouped together -->
+                <section>
+                    <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nav_bar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        
+                    </button>
+                    <a class="navbar-brand" href="#">Grid</a>
+                </section>
+            
+                
+                <div class="container-fluid collapse navbar-collapse" id="nav_bar">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active"> <a class="nav-link" href="#">How it works</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Who we are</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">What we do </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact us</a> </li>
+                    </ul>
+
+                    
+                </div>
 
                 <button type="button" class="btn btn-primary rounded-pill px-5">Sign In</button>
 
@@ -50,53 +63,62 @@
             We're the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your layouts, templates and developers to empower all involved.
         </p>
 
+        <!-- learn more section -->
         <section class="container">
             <section class="row row-cols-sm-2">
-                <section class="col-lg col-sm">
+                <section class="col-lg col-sm info">
                     <!-- icon -->
+                    <div class="icons" id="thumbs-up"></div>
                     
                     <!-- paragraph -->
-                    <p> Swap the icon </p>
+                    <h3> Swap the icon </h3>
+                    <p>You can toggle to any icon with instances and customize outlined stroke to be more bold or light</p>
                     <!--  -->
                     
                     <!-- button -->
-                    <button>Learn more</button>
+                    <button type="button" class="btn btn-outline-secondary lavender">Learn more</button>
                     
                 </section>
 
-                <section class="col-lg col-sm">
+                <section class="col-lg col-sm info">
                     <!-- icon -->
-                    
+                    <div class="icons" id="zap-off"></div>
+
                     <!-- paragraph -->
-                    <p> Detach if need <br>You can toggle to any icon within instances and customize outlined stroke bolder or lighter</p>
+                    <h3> Detach if need</h3> 
+                    <p>Detaching the block instance will help you to control the indents and font styles more precisely</p>
                     <!--  -->
                     
                     <!-- button -->
-                    <button>Learn more</button>
+                    <button type="button" class="btn btn-outline-secondary lavender">Learn more</button>
                     
                 </section>
 
-                <section class="col-lg col-sm">
+                <section class="col-lg col-sm info">
                     <!-- icon -->
+                    <div class="icons" id="linkedin"></div>
                     
                     <!-- paragraph -->
-                    <p> Toggle icons <br>Detaching the block instance will help you to control the indents and font styles more precisely</p>
+                    <h3> Toggle icons </h3>
+                    <p>You can toggle to any icon with instances and customize outlined stroke to be more bold or light</p>
                     <!--  -->
                     
                     <!-- button -->
-                    <button>Learn more</button>
+                    <button type="button" class="btn btn-outline-secondary lavender">Learn more</button>
                     
                 </section>
 
-                <section class="col-lg col-sm">
+                <section class="col-lg col-sm info">
                     <!-- icon -->
+                    <div class="icons" id="briefcase"></div>
                     
                     <!-- paragraph -->
-                    <p> Replace a title </p>
+                    <h3> Replace a title </h3>
+                    <p>Detaching the block instance will help you to control the indents and font styles more precisely</p>
                     <!--  -->
                     
                     <!-- button -->
-                    <button>Learn more</button>
+                    <button type="button" class="btn btn-outline-secondary lavender">Learn more</button>
                     
                 </section>
             </section>
@@ -105,6 +127,7 @@
     </section>
 
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
